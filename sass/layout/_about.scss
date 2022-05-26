@@ -1,0 +1,66 @@
+.about-icons-list{
+
+   @include tablet {
+       display: flex;
+       flex-wrap: wrap;
+    margin-left: -30px;
+   }
+}
+.about-icons-list__item {
+    @include tablet{
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px; }
+    @include desktop {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    }
+}
+.about-icons-list__link {
+    width: 100%;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    @include tablet {
+    width: 354px;
+    }
+    @include desktop {
+    width: 270px;    
+    }
+}
+
+.about-icons-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+// .about-item {
+//     margin-bottom: 30px;
+// }
+
+.about-item__title {
+    font-weight: 700;
+    line-height: 1.17;
+    color: rgba(33, 33, 33, 1);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.about-item__text {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    max-width: 480px;
+    @include tablet {
+        max-width: 354px;
+    }
+    @include desktop {
+    max-width: 270px;
+    }
+    
+}

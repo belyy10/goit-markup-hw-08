@@ -1,0 +1,37 @@
+.picture {
+    padding-top: 0;
+    display: none;
+    
+    @include desktop {
+        display: block;
+    }
+}
+
+
+.picture-list {
+    display: flex;
+}
+
+.picture-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.picture-description {
+    position: relative;
+}
+
+.picture-text {
+    bottom: 0;
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--primary-white-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+}
