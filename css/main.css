@@ -1269,10 +1269,12 @@ a {
 
 .container-contacts {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .container-contacts {
+    margin-bottom: 0px;
     margin-right: 70px;
     text-align: start;
   }
@@ -1408,6 +1410,7 @@ a {
 
 @media screen and (min-width: 480px) {
   .footer-wrap {
+    display: block;
     -webkit-box-pack: normal;
         -ms-flex-pack: normal;
             justify-content: normal;
